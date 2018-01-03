@@ -8,7 +8,8 @@
      <property name="phploc" value="phploc"/>
      <property name="phpmd" value="phpmd"/>
      <property name="phpunit" value="phpunit"/>
-    
+     <property name="phpab" value="phpab"/>
+
     <target name="build" depends="prepare,lint,phploc-ci,pdepend,phpmd-ci,phpcs-ci,phpcpd-ci,phpunit,phpdox,-check-failure"/>
 
     <target name="clean" unless="clean.done" description="Cleanup build artifacts">
